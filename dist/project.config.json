@@ -1,0 +1,100 @@
+{
+  "miniprogramRoot": "./",
+  "projectname": "medicine",
+  "description": "微信小程序",
+  "appid": "wx5897527a28e9f5ca",
+  "setting": {
+    "urlCheck": false,
+    "es6": false,
+    "enhance": false,
+    "postcss": false,
+    "preloadBackgroundData": false,
+    "minified": false,
+    "newFeature": true,
+    "coverView": true,
+    "nodeModules": false,
+    "autoAudits": false,
+    "showShadowRootInWxmlPanel": false,
+    "scopeDataCheck": false,
+    "uglifyFileName": false,
+    "checkInvalidKey": true,
+    "checkSiteMap": true,
+    "uploadWithSourceMap": true,
+    "compileHotReLoad": false,
+    "useMultiFrameRuntime": false,
+    "useApiHook": true,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    },
+    "enableEngineNative": false,
+    "bundle": false,
+    "useIsolateContext": true,
+    "useCompilerModule": true,
+    "userConfirmedUseCompilerModuleSwitch": false,
+    "userConfirmedBundleSwitch": false,
+    "packNpmManually": false,
+    "packNpmRelationList": [],
+    "minifyWXSS": true
+  },
+  "compileType": "miniprogram",
+  "simulatorType": "wechat",
+  "simulatorPluginLibVersion": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "query": "id=6859541183725568",
+          "scene": null
+        },
+        {
+          "name": "555",
+          "pathName": "pages/service/service",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "列表",
+          "pathName": "pages/fetchOrder/fetchOrder",
+          "query": "id=6859541183725568",
+          "scene": null
+        },
+        {
+          "name": "详情",
+          "pathName": "pages/fetchOrderShareMessage/fetchOrderShareMessage",
+          "query": "id=7778487996252160",
+          "scene": null
+        },
+        {
+          "name": "pages/resume/addResume",
+          "pathName": "pages/resume/addResume",
+          "query": "id=6859541183725568",
+          "scene": null
+        },
+        {
+          "name": "pages/service/detail",
+          "pathName": "pages/service/detail",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/service/service",
+          "pathName": "pages/service/service",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

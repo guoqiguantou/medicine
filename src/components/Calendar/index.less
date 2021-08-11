@@ -1,0 +1,107 @@
+.calendar {
+  .calendarTop {
+    height: 128px;
+    line-height: 128px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    padding: 0 24px;
+
+    .calendarTopBtn {
+      line-height: 40px;
+      padding: 10px 20px;
+      color: #F2544E;
+      border: 2px solid #F2544E;
+      font-size: 28px;
+      border-radius: 30px;
+    }
+
+    .calendarToptext {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .text {
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 44px;
+        color: #F2544E;
+      }
+    }
+  }
+
+  .calendarWeek {
+    height: 80px;
+    line-height: 80px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 28px;
+    color: #999;
+    padding: 0 24px;
+    background: #fff;
+
+    .calendarWeekItem {
+      flex: 1;
+      text-align: center;
+    }
+  }
+
+  .calendarDay {
+    padding: 0 24px 24px;
+    background: #fff;
+
+    .view {
+      height: 80px;
+      line-height: 80px;
+      width: 14.28%;
+      display: inline-block;
+      text-align: center;
+      color: #55575E;
+      font-size: 36px;
+      margin: 5px 0;
+      border-radius: 50%;
+
+      .currentDay {
+        border: 1px solid #F2544E;
+        color: #F2544E;
+      }
+
+      .marksDay {
+        width: 80px;
+        background: #F2544E;
+        color: #fff;
+      }
+
+      .activeDay {
+        color: #F2544E !important;
+        background: #FEEEED;
+      }
+
+      .item {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+      }
+
+      .pday,
+      .nday {
+        width: 80px;
+        height: 80px;
+        color: #e1e4e7;
+      }
+
+      .cday {
+        font-size: 28px;
+        display: block;
+      }
+
+    }
+
+
+
+
+  }
+}

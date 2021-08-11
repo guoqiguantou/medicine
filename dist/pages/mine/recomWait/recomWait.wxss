@@ -1,0 +1,209 @@
+.recom-wait {
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #FAFAFA 100%), -webkit-linear-gradient(352.94deg, #F2544E 0%, #F2894E 100%);
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #FAFAFA 100%), -o-linear-gradient(352.94deg, #F2544E 0%, #F2894E 100%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FAFAFA 100%), linear-gradient(97.06deg, #F2544E 0%, #F2894E 100%);
+}
+.recom-wait .rec1 {
+  width: 675rpx;
+  height: 220rpx;
+  margin: 30rpx 0 0 40rpx;
+}
+.recom-wait .rec3 {
+  width: 200rpx;
+  height: 64rpx;
+  background: #FFFFFF;
+  opacity: 0.7;
+  border-radius: 12rpx 12rpx 0 0;
+  color: #F2544E;
+  text-align: center;
+  margin-left: 35rpx;
+}
+.recom-wait .rec3 .rec3-text {
+  font-family: PingFang SC;
+  font-weight: 400;
+  font-size: 24rpx;
+  line-height: 40rpx;
+}
+.recom-wait .rec3 .rec3-icon {
+  font-size: 20rpx;
+  padding-left: 3rpx;
+}
+.recom-wait .rec6 {
+  margin: 8rpx 23rpx;
+}
+.recom-wait .rec6 .rec2 {
+  height: 192rpx;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0 8rpx 8rpx rgba(242, 84, 78, 0.15);
+          box-shadow: 0 8rpx 8rpx rgba(242, 84, 78, 0.15);
+  border-radius: 12rpx;
+  padding: 0 96rpx;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: -22rpx 0 0 0;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.recom-wait .rec6 .rec2 .rec2-1 .rec2-11 {
+  font-family: PingFang SC;
+  font-weight: 600;
+  font-size: 56rpx;
+  line-height: 70rpx;
+  text-align: center;
+  color: #FF5A53;
+}
+.recom-wait .rec6 .rec2 .rec2-1 .rec2-11 .rec2-111 {
+  font-size: 28rpx;
+}
+.recom-wait .rec6 .rec2 .rec2-1 .rec2-12 {
+  font-family: PingFang SC;
+  font-weight: 400;
+  font-size: 28rpx;
+  text-align: center;
+  color: #55575E;
+}
+.recom-wait .rec6 .rec2 .rec2-1 .rec2-13 {
+  color: #7577EB;
+}
+.recom-wait .rec6 .rec2 .rec2-2 {
+  border: 1rpx solid rgba(246, 170, 133, 0.2);
+  height: 106rpx;
+}
+.recom-wait .rec6 .rec2-15 {
+  height: 25rpx;
+  position: relative;
+}
+.recom-wait .rec6 .rec2-15 .rec2-16 {
+  width: 600rpx;
+  height: 70rpx;
+  position: absolute;
+  top: -22rpx;
+  left: 56rpx;
+}
+.recom-wait .rec6 .rec2-17 {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0 8rpx 8rpx rgba(242, 84, 78, 0.15);
+          box-shadow: 0 8rpx 8rpx rgba(242, 84, 78, 0.15);
+  border-radius: 12rpx;
+}
+.recom-wait .rec6 .rec2-17 .rec2-18 {
+  margin: 0 52rpx;
+}
+.recom-wait .rec6 .rec2-17 .rec2-18 .rec2-19 {
+  height: 128rpx;
+  width: 100%;
+}
+.recom-wait .rec6 .rec2-17 .rec2-18 .rec2-20 {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.recom-wait .rec6 .rec2-17 .rec2-18 .rec2-20 .rec2-21 {
+  font-family: PingFang SC;
+  font-weight: 400;
+  font-size: 28rpx;
+  line-height: 40rpx;
+  text-align: center;
+  color: #5E5F77;
+}
+.recom-wait .rec6 .rec2-17 .rec2-22 {
+  height: 60rpx;
+  position: relative;
+}
+.recom-wait .rec6 .rec2-17 .rec2-22 .rec2-25 {
+  height: 32rpx;
+  width: 739rpx;
+  position: absolute;
+  left: -20rpx;
+  top: 20rpx;
+}
+.recom-wait .rec6 .rec2-17 .rec2-26 {
+  font-family: PingFang SC;
+  font-weight: 300;
+  font-size: 28rpx;
+  line-height: 45rpx;
+  color: #5E5F77;
+  padding: 0 40rpx 50rpx 40rpx;
+}
+.recom-wait .rec6 .rec2-27 {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0 8rpx 8rpx rgba(242, 84, 78, 0.15);
+          box-shadow: 0 8rpx 8rpx rgba(242, 84, 78, 0.15);
+  border-radius: 12rpx;
+  padding: 28rpx;
+  text-align: center;
+}
+.recom-wait .rec6 .rec2-27 .rec2-28 .rec2-29 {
+  font-family: PingFang SC;
+  color: #7778B2;
+  font-size: 28rpx;
+}
+.recom-wait .rec6 .rec2-27 .rec2-28 .rec2-30 {
+  font-family: PingFang SC;
+  font-size: 32rpx;
+  color: #F2544E;
+}
+.recom-wait .rec6 .rec2-27 .rec2-28 .rec2-31 {
+  font-family: PingFang SC;
+  font-weight: 600;
+  font-size: 56rpx;
+  color: #F2544E;
+}
+.recom-wait .rec6 .rec2-27 .rec2-32 {
+  font-family: PingFang SC;
+  font-weight: 400;
+  font-size: 25rpx;
+  color: #999999;
+}
+.recom-wait .rec5 {
+  height: 96rpx;
+  background: -webkit-linear-gradient(58.97deg, #F2544E 16.55%, #F2894E 86.16%);
+  background: -o-linear-gradient(58.97deg, #F2544E 16.55%, #F2894E 86.16%);
+  background: linear-gradient(31.03deg, #F2544E 16.55%, #F2894E 86.16%);
+  border-radius: 12rpx;
+  font-family: PingFang SC;
+  font-weight: 400;
+  font-size: 36rpx;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #FFFFFF;
+  margin: 56rpx;
+}
+.btn-box {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 50rpx 0;
+}
+.btn-box .btn-1 {
+  width: 239rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  border-radius: 25rpx;
+  text-align: center;
+  background: -webkit-linear-gradient(58.97deg, #F2544E 16.55%, #F2894E 86.16%);
+  background: -o-linear-gradient(58.97deg, #F2544E 16.55%, #F2894E 86.16%);
+  background: linear-gradient(31.03deg, #F2544E 16.55%, #F2894E 86.16%);
+  color: white;
+  font-family: PingFang SC;
+  font-size: 32rpx;
+}
+

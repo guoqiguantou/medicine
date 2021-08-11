@@ -1,0 +1,19 @@
+.list .listBtn {
+  height: 72rpx;
+  border: 1rpx solid #CCCCCC;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 36rpx;
+  line-height: 72rpx;
+  color: #999999;
+  padding: 0 30rpx;
+  font-size: 28rpx;
+}
+.list .disabled {
+  opacity: 0.8;
+  color: #ccc;
+}
+.list .high .Text {
+  color: #F2544E;
+}
+

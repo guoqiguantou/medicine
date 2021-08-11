@@ -1,0 +1,686 @@
+.upload .idCard {
+  width: 640rpx;
+  height: 400rpx;
+  background-image: url("data:image/png;base64,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");
+  background-size: 100% 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto 40rpx;
+  border: 2rpx dashed #F2544E;
+  border-radius: 16rpx;
+}
+.upload .idCard .text {
+  font-size: 40rpx;
+  line-height: 56rpx;
+  color: #F2544E;
+}
+.upload .idCard .idCardicon {
+  font-size: 80rpx;
+  color: #F2544E;
+  margin-bottom: 32rpx;
+}
+.upload .idCardImg {
+  width: 640rpx;
+  height: 400rpx;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto 40rpx;
+  border: 2rpx dashed #F2544E;
+  border-radius: 16rpx;
+}
+.upload .idCardImg .upload-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 16rpx;
+}
+
+.identity {
+  border-radius: 16rpx;
+  margin: 20rpx 24rpx 40rpx;
+  background-color: #fff;
+  padding: 32rpx;
+}
+.identity .heightAuto {
+  height: auto !important;
+}
+.identity .bmform {
+  height: 340rpx;
+  overflow: hidden;
+}
+.identity .bmform .at-input {
+  padding: 28rpx 0;
+}
+.identity .bmform .at-input .at-input__title {
+  font-size: 36rpx;
+}
+.identity .bmform .at-input input {
+  font-size: 34rpx;
+  color: #55575E;
+  text-align: right;
+  font-family: PingFang SC;
+}
+.identity .bmform .at-input:after {
+  border-color: #EFEFEF;
+}
+.identity .bmform .selectItem {
+  height: 110rpx;
+  line-height: 110rpx;
+  border-bottom: 1rpx solid #EFEFEF;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 32rpx;
+}
+.identity .bmform .selectItem .title {
+  font-size: 36rpx;
+  line-height: 110rpx;
+  color: #55575E;
+}
+.identity .bmform .selectItem Picker {
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.identity .bmform .selectItem .value {
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-size: 36rpx;
+  line-height: 110rpx;
+  text-align: right;
+  color: #55575E;
+}
+.identity .bmform .selectItem .value .placeholder {
+  color: #CCCCCC;
+}
+.identity .bmform .disabled .title {
+  color: #ccc !important;
+}
+.identity .bmform .disabled .value {
+  color: #ccc !important;
+}
+.identity .more {
+  height: 110rpx;
+  font-size: 32rpx;
+  line-height: 110rpx;
+  color: #999999;
+  text-align: center;
+}
+.identity .more .icon {
+  color: #ccc;
+  font-size: 16rpx;
+}
+
+.uploadVideo .uploadList .uploadItem .uploadImg {
+  height: 200rpx;
+  border: 2rpx solid #eee;
+  position: relative;
+  margin: 10rpx;
+}
+.uploadVideo .uploadList .uploadItem .uploadImg .uploadDel {
+  position: absolute;
+  right: 4rpx;
+  top: 10rpx;
+  width: 50rpx;
+  height: 50rpx;
+  z-index: 999;
+}
+.uploadVideo .uploadList .uploadItem .uploadImg .Video {
+  width: 100%;
+  height: 100%;
+}
+.uploadVideo .uploadList .uploadItem .uploadImg .taro-video {
+  width: 100%;
+  height: 100%;
+}
+.uploadVideo .uploadList .uploadItem .uploadAdd {
+  margin: 10rpx;
+  height: 200rpx;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 2rpx dashed #F2544E;
+  border-radius: 4rpx;
+}
+.uploadVideo .uploadList .uploadItem .uploadAdd .uploadText {
+  color: #999;
+  font-size: 28rpx;
+}
+.uploadVideo .uploadView .pic {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+.uploadVideo .uploadView .pic .picTitle {
+  font-size: 36rpx;
+  line-height: 50rpx;
+  color: #F2544E;
+}
+.uploadVideo .uploadView .pic .picTitle .picIcon {
+  font-size: 70rpx;
+  color: #F2544E;
+  margin-right: 16rpx;
+}
+.uploadVideo .uploadView .pic .picInfo {
+  font-size: 28rpx;
+  line-height: 40rpx;
+  margin-top: 8rpx;
+  color: #999999;
+  margin-bottom: 100rpx;
+}
+
+.uploadAvatar .uploadImg {
+  width: 128rpx;
+  height: 172rpx;
+  background: #f4f4f4;
+  border-radius: 8rpx;
+}
+.uploadAvatar .uploadImg .upload-image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.uploadAvatar .uploadAdd {
+  height: 172rpx;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.uploadAvatar .uploadAdd .uploadText {
+  color: #999;
+  font-size: 28rpx;
+}
+
+.jobInfo .checkboxView .checkbox {
+  height: 80rpx;
+  background: #F7F7F7;
+  border-radius: 8rpx;
+  color: #55575E;
+  font-size: 28rpx;
+  text-align: center;
+  margin: 10rpx;
+  border: 1rpx solid transparent;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  white-space: normal;
+  word-wrap: break-word;
+  word-break: break-all;
+  line-height: 30rpx;
+}
+.jobInfo .checkboxView .checkboxActive {
+  background: rgba(242, 84, 78, 0.05);
+  border: 1rpx solid #F2544E;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 8rpx;
+  position: relative;
+  color: #F2544E;
+}
+.jobInfo .checkboxView .checkboxActive::before {
+  content: "✓";
+  position: absolute;
+  bottom: 0;
+  right: 2rpx;
+  font-size: 26rpx;
+  color: #fff;
+  display: block;
+  z-index: 99;
+  line-height: 30rpx;
+}
+.jobInfo .checkboxView .checkboxActive::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border: 30rpx solid transparent;
+  width: 0;
+  height: 0;
+  border-left: 30rpx solid #F2544E;
+  -webkit-transform: translate(30rpx, 30rpx) rotate(45deg);
+      -ms-transform: translate(30rpx, 30rpx) rotate(45deg);
+          transform: translate(30rpx, 30rpx) rotate(45deg);
+}
+.jobInfo .textarea {
+  background: #F7F7F7;
+  border-radius: 16rpx;
+  display: block;
+  border-color: transparent;
+  padding: 32rpx;
+  width: 100%;
+  font-size: 32rpx;
+}
+.jobInfo .userPic {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.jobInfo .userPic .userPicLeft {
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.jobInfo .userPic .userPicLeft .userPicTitle {
+  font-weight: 600;
+  font-size: 36rpx;
+  line-height: 50rpx;
+  color: #272727;
+}
+.jobInfo .userPic .userPicLeft .userPicInfo {
+  font-size: 28rpx;
+  line-height: 40rpx;
+  color: #999999;
+  margin-top: 8rpx;
+}
+.jobInfo .userPic .userPicRight {
+  width: 128rpx;
+  height: 172rpx;
+  background: #f4f4f4;
+  border-radius: 8rpx;
+}
+.jobInfo .userPic .userPicRight Image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.jobInfo .addCard {
+  margin: 20rpx;
+}
+.jobInfo .addCard .addCardTitle {
+  font-weight: 600;
+  font-size: 32rpx;
+  line-height: 44rpx;
+  color: #999999;
+  margin-bottom: 16rpx;
+  margin-top: 40rpx;
+}
+.jobInfo .addCard .addCardView .addCardItem {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  height: 84rpx;
+  margin: 10rpx;
+}
+.jobInfo .addCard .addCardView .addCardItem .addCardItemIcon {
+  font-size: 40rpx;
+  margin-right: 8rpx;
+  color: #ccc;
+}
+.jobInfo .addCard .addCardView .activeAdd {
+  background-color: #F2544E;
+  color: #fff;
+}
+.jobInfo .addCard .addCardView .activeAdd .addCardItemIcon {
+  color: #fff;
+}
+
+.workingExperiences .selectItem {
+  height: 110rpx;
+  line-height: 110rpx;
+  border-bottom: 1rpx solid #EFEFEF;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 32rpx;
+}
+.workingExperiences .selectItem .title {
+  font-size: 32rpx;
+  line-height: 110rpx;
+  color: #55575E;
+}
+.workingExperiences .selectItem .picker {
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.workingExperiences .selectItem .value {
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-size: 34rpx;
+  line-height: 110rpx;
+  text-align: right;
+  color: #55575E;
+}
+.workingExperiences .selectItem .value .placeholder {
+  color: #CCCCCC;
+}
+.workingExperiences .workingExperiencesCoverView {
+  position: relative;
+  z-index: 999;
+}
+.workingExperiences .textareaView {
+  padding: 0 40rpx;
+}
+.workingExperiences .textareaView .textarea {
+  background: #F7F7F7;
+  border-radius: 16rpx;
+  display: block;
+  border-color: transparent;
+  padding: 32rpx;
+  width: 100%;
+  font-size: 32rpx;
+  margin: 0 0 20rpx;
+}
+
+.personalInfo .checkboxView .checkbox {
+  height: 80rpx;
+  line-height: 80rpx;
+  background: #F7F7F7;
+  border-radius: 8rpx;
+  color: #55575E;
+  font-size: 28rpx;
+  text-align: center;
+  margin: 10rpx;
+  border: 1rpx solid transparent;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  white-space: normal;
+  word-wrap: break-word;
+  word-break: break-all;
+  line-height: 30rpx;
+}
+.personalInfo .checkboxView .checkboxActive {
+  background: rgba(242, 84, 78, 0.05);
+  border: 1rpx solid #F2544E;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 8rpx;
+  position: relative;
+  color: #F2544E;
+}
+.personalInfo .checkboxView .checkboxActive::before {
+  content: "✓";
+  position: absolute;
+  bottom: 0;
+  right: 2rpx;
+  font-size: 26rpx;
+  color: #fff;
+  display: block;
+  z-index: 99;
+  line-height: 30rpx;
+}
+.personalInfo .checkboxView .checkboxActive::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border: 30rpx solid transparent;
+  width: 0;
+  height: 0;
+  border-left: 30rpx solid #F2544E;
+  -webkit-transform: translate(30rpx, 30rpx) rotate(45deg);
+      -ms-transform: translate(30rpx, 30rpx) rotate(45deg);
+          transform: translate(30rpx, 30rpx) rotate(45deg);
+}
+.personalInfo .CardSelect2 {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.personalInfo .CardSelect2 .CardSelectTop {
+  border-bottom: 1rpx solid #EFEFEF;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 25rpx;
+}
+.personalInfo .CardSelect2 .CardSelectInput {
+  width: 100%;
+  font-size: 34rpx;
+  line-height: 50rpx;
+  height: 100rpx !important;
+  color: #CCCCCC;
+  display: block;
+  padding: 30rpx 30rpx 0;
+  margin: 0;
+}
+.personalInfo .CardSelect2 .CardSelectInput:after {
+  border-color: transparent !important;
+}
+.personalInfo .CardSelect2 .CardSelectInput input {
+  font-size: 34rpx;
+  text-align: right;
+}
+.personalInfo .cardInput {
+  background: #fff;
+  padding: 32rpx;
+  margin: 20rpx;
+  border-radius: 16rpx;
+  display: none;
+}
+.personalInfo .cardInput:after {
+  border-color: transparent !important;
+}
+.personalInfo .cardInput .leftText {
+  font-weight: 600;
+  font-size: 38rpx;
+  line-height: 50rpx;
+  color: #272727;
+  width: 300rpx;
+}
+.personalInfo .cardInput .at-input__title {
+  font-weight: 600;
+  font-size: 38rpx;
+  line-height: 50rpx;
+  color: #272727;
+  width: 300rpx;
+}
+.personalInfo .cardInput input {
+  font-size: 34rpx;
+  text-align: right;
+}
+.personalInfo .cardInput input:after {
+  border-color: transparent !important;
+}
+.personalInfo .cardInput .rightText {
+  color: #ccc !important;
+  font-size: 38rpx;
+}
+.personalInfo .cardInputWarp {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.personalInfo .cardInputWarp .cinput {
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-right: 20rpx;
+}
+.personalInfo .cardInputWarp .cplaceholder {
+  color: #ccc !important;
+}
+.personalInfo .show {
+  display: block;
+}
+.personalInfo .pic {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.personalInfo .pic .picTitle {
+  width: 100%;
+  font-size: 36rpx;
+  line-height: 70rpx;
+  color: #F2544E;
+  margin-top: 20rpx;
+  font-weight: 600;
+  text-align: center;
+}
+.personalInfo .pic .picTitle .picIcon {
+  font-size: 44rpx;
+  color: #F2544E;
+  margin-right: 16rpx;
+}
+.personalInfo .pic .picEmpty {
+  margin: 70rpx 0 100rpx;
+}
+.personalInfo .pic .picList {
+  width: 100%;
+  padding: 0 20rpx;
+}
+.personalInfo .pic .picList .picListItem {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 100rpx;
+  height: 100rpx;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1rpx solid #f4f4f4;
+}
+.personalInfo .pic .picList .picListItem .picListItemTime {
+  font-size: 30rpx;
+}
+.personalInfo .pic .picList .picListItem .picListItemBtn {
+  margin-left: 10rpx;
+}
+.personalInfo .pic .picList .picListItem .picListItemBtn .Text {
+  font-size: 32rpx;
+  margin: 0 6rpx;
+}
+.personalInfo .pic .picList .picListItem .picListItemBtn .delText {
+  color: red;
+}
+.personalInfo .addCard {
+  margin: 20rpx;
+}
+.personalInfo .addCard .addCardTitle {
+  font-weight: 600;
+  font-size: 32rpx;
+  line-height: 44rpx;
+  color: #999999;
+  margin-bottom: 16rpx;
+  margin-top: 40rpx;
+}
+.personalInfo .addCard .addCardView .addCardItem {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  height: 84rpx;
+  margin: 10rpx;
+}
+.personalInfo .addCard .addCardView .addCardItem .addCardItemIcon {
+  font-size: 40rpx;
+  margin-right: 8rpx;
+  color: #ccc;
+}
+.personalInfo .addCard .addCardView .addCardItem .addCardItemText {
+  font-size: 32rpx;
+}
+.personalInfo .addCard .addCardView .activeAdd {
+  background-color: #F2544E;
+  color: #fff;
+}
+.personalInfo .addCard .addCardView .activeAdd .addCardItemIcon {
+  color: #fff;
+}
+

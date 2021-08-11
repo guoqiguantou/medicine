@@ -1,0 +1,206 @@
+page,
+Text,
+View,
+input,
+textarea {
+  font-family: PingFang SC;
+  box-sizing: border-box;
+}
+
+textarea {
+  background-color: transparent;
+}
+
+input {
+  &::placeholder {
+    font-family: PingFang SC;
+
+  }
+}
+
+page,
+body {
+  background-color: #F5F5F5;
+}
+
+.disabledText {
+  color: #999999;
+}
+
+.yellowText {
+  color: yellow;
+}
+
+.primaryText {
+  color: #F2544E !important;
+}
+
+.fixedView {
+  padding-bottom: 128px;
+}
+
+.fixedBtnView {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: #fff;
+  padding: 20px 24px;
+  z-index: 99;
+
+  .fixedBtn {
+    background: #F2544E;
+    border-radius: 12px;
+    border: 1px solid transparent;
+    color: #fff;
+  }
+
+  .fixedBtn.at-button--disabled {
+    background: #ccc;
+    opacity: 1;
+  }
+}
+
+
+.CardSelect {
+  background: #fff;
+  padding: 32px;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  border-radius: 16px;
+
+  .CardSelectTitle {
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 56px;
+    color: #272727;
+
+    .required {
+      font-size: 28px;
+      line-height: 40px;
+      color: #F2544E;
+      margin-left: 8px;
+    }
+  }
+
+  .CardSelectValue {
+    line-height: 56px;
+    color: #ccc;
+    flex: 1;
+    margin-left: 10px;
+    text-align: right;
+    font-size: 36px;
+  }
+
+}
+
+.BmModal {
+  .at-modal__header {
+    font-size: 40px !important;
+    padding: 40px 32px 0px !important;
+    color: #272727;
+    text-align: left;
+    font-weight: 500;
+
+    .closeBtn {
+      float: right;
+
+      .clear {
+        font-size: 28px;
+        font-weight: 400;
+      }
+    }
+
+    &::after {
+      border-bottom: 1PX solid transparent;
+    }
+  }
+
+  .at-modal__container {
+    width: 700px;
+  }
+
+  .confirmBtn {
+    color: #F2544E !important;
+    margin-top: 0px;
+  }
+
+  .at-modal__footer .at-modal__action>button {
+    font-size: 36px !important;
+  }
+}
+
+.BmTab {
+  margin-top: -80px;
+  height: 100px !important;
+
+  .at-tabs__header {
+    border-radius: 16px 16px 0px 0px;
+
+    .at-tabs__item {
+      font-size: 32px;
+      line-height: 50px;
+      color: #999999;
+      padding: 24px 15px;
+    }
+
+    .at-tabs__item--active {
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 50px;
+      color: #F2544E;
+
+      .at-tabs__item-underline {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+    }
+
+    .at-tabs__item-underline {
+      width: 48px;
+      height: 8px;
+      background: linear-gradient(97.06deg, #F2544E 0%, #F2894E 100%);
+      border-radius: 8px;
+    }
+
+
+  }
+}
+
+.BmCalendar {
+  .at-calendar__list.flex {
+    .flex__item--selected-head.flex__item--selected-tail .flex__item-container {
+      background-color: #F2544E;
+    }
+
+    .flex__item--selected {
+      background-color: #F2544E;
+    }
+  }
+}
+
+.ListPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+
+@import "~taro-ui/dist/style/components/tabs.scss";
+@import "~taro-ui/dist/style/components/button.scss";
+@import "~taro-ui/dist/style/components/loading.scss";
+@import "~taro-ui/dist/style/components/icon.scss";
+@import "~taro-ui/dist/style/components/flex.scss";
+@import "~taro-ui/dist/style/components/input.scss";
+@import "~taro-ui/dist/style/components/modal.scss";
+@import "~taro-ui/dist/style/components/textarea.scss";
+@import "~taro-ui/dist/style/components/calendar.scss";
+@import "~taro-ui/dist/style/components/timeline.scss";
+@import "~taro-ui/dist/style/components/list.scss";
+@import "~taro-ui/dist/style/components/tag.scss";
+@import "~taro-ui/dist/style/components/divider.scss";
+@import "~taro-ui/dist/style/components/activity-indicator.scss";
+@import '~taro-ui/dist/style/components/loading.scss';

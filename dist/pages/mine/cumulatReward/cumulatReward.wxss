@@ -1,0 +1,119 @@
+.cumulat {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.cumulat .cu-1 {
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  background: #F5F5F5;
+  border-radius: 16rpx 16rpx 0 0;
+  margin-top: -50rpx;
+  padding: 32rpx;
+}
+.cumulat .cu-1 .cu-2 {
+  font-family: PingFang SC;
+  font-size: 28rpx;
+  line-height: 45rpx;
+  color: #999999;
+}
+.cumulat .cu3 {
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  overflow: hidden;
+}
+.cumulat .cu3 .cu5 {
+  padding: 20rpx 32rpx 32rpx 32rpx;
+  background: #FFFFFF;
+  border-radius: 16rpx;
+  margin: 0 25rpx 20rpx 25rpx;
+}
+.cumulat .cu3 .cu5 .cu6 {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 80rpx;
+}
+.cumulat .cu3 .cu5 .cu6 .cu8 {
+  font-family: PingFang SC;
+  font-size: 36rpx;
+  color: #272727;
+}
+.cumulat .cu3 .cu5 .cu6 .cu9 {
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.cumulat .cu3 .cu5 .cu6 .cu9 .cu11 {
+  font-family: PingFang SC;
+  font-weight: 300;
+  font-size: 36rpx;
+  color: #55575E;
+  margin: 0 10rpx;
+}
+.cumulat .cu3 .cu5 .cu6 .cu9 .cu12 {
+  color: #F2894E;
+  font-size: 40rpx;
+}
+.cumulat .cu3 .cu5 .cu6 .cu10 {
+  padding: 0 10rpx;
+  border-radius: 4rpx;
+  line-height: 37rpx;
+  font-family: PingFang SC;
+  font-weight: 400;
+  font-size: 25rpx;
+}
+.cumulat .cu3 .cu5 .cu6 .cu10img {
+  color: #F2864E;
+  background: rgba(242, 134, 78, 0.1);
+  border: 1rpx solid rgba(242, 132, 78, 0.2);
+}
+.cumulat .cu3 .cu5 .cu6 .cu10succ {
+  color: #07c160;
+  background: rgba(7, 193, 96, 0.05);
+  border: 1rpx solid rgba(7, 193, 96, 0.2);
+}
+.cumulat .cu3 .cu5 .cu6 .cu10err {
+  color: #F2544E;
+  background: rgba(242, 84, 78, 0.1);
+  border: 1rpx solid rgba(242, 84, 78, 0.2);
+}
+.cumulat .cu3 .cu5 .cu7 {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.cumulat .cu3 .cu5 .cu7 .cu15 {
+  font-family: PingFang SC;
+  font-weight: 400;
+  font-size: 28rpx;
+  color: #CCCCCC;
+}
+.cumulat .cu3 .cu5 .cu7 .cu17 {
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: right;
+}
+.cumulat .cu3 .cu5 .cu7 .cu16 {
+  font-family: PingFang SC;
+  font-weight: 500;
+  font-size: 28rpx;
+  color: #F2844E;
+}
+

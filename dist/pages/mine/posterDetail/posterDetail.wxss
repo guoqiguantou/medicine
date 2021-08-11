@@ -1,0 +1,135 @@
+.poster .pos-1 {
+  background: #F5F5F5;
+  border-radius: 16rpx 16rpx 0 0;
+  margin-top: -50rpx;
+  padding: 32rpx;
+}
+.poster .pos-15 {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 60rpx 0 0 0;
+  -webkit-flex-flow: column wrap;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+}
+.poster .pos-16 {
+  font-size: 28rpx;
+  color: #999999;
+  line-height: 90rpx;
+}
+.poster .pos-2 {
+  width: 600rpx;
+  height: 1000rpx;
+}
+.poster .pos-3 .pos-5 {
+  position: relative;
+  height: 80rpx;
+  text-align: center;
+}
+.poster .pos-3 .pos-5 .pos-7 {
+  border: 1rpx solid #EEEEEE;
+  width: 100%;
+  position: absolute;
+  top: 35rpx;
+  left: 0;
+}
+.poster .pos-3 .pos-5 .pos-8 {
+  color: #999999;
+  position: relative;
+  z-index: 1;
+  width: 170rpx;
+  background-color: #F5F5F5;
+  top: 15rpx;
+  left: 300rpx;
+  text-align: center;
+}
+.poster .pos-3 .pos-6 {
+  margin: 20rpx 0 60rpx 0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+.poster .pos-3 .pos-6 .pos-9 .pos-10 {
+  width: 96rpx;
+  height: 96rpx;
+}
+.poster .pos-3 .pos-6 .pos-9 .pos-11 {
+  font-family: PingFang SC;
+  font-weight: 300;
+  font-size: 25rpx;
+  text-align: center;
+  line-height: 50rpx;
+  color: #55575E;
+}
+.bu {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.bu .bu1 {
+  width: 680rpx;
+  min-height: 380rpx;
+  background-color: white;
+  border-radius: 10rpx;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: wrap column;
+      -ms-flex-flow: wrap column;
+          flex-flow: wrap column;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.bu .bu1 .bu-title {
+  font-size: 38rpx;
+  text-align: center;
+  line-height: 100rpx;
+  color: #666666;
+}
+.bu .bu1 .bu-content {
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  color: #999999;
+  font-size: 32rpx;
+  padding: 0 30rpx;
+}
+.bu .bu1 .bu-bt-bx {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.bu .bu1 .bu-bt-bx .btn-st {
+  width: 50%;
+  background-color: white;
+  color: #666666;
+  border: none;
+}
+
